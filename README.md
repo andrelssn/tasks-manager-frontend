@@ -1,12 +1,54 @@
-# React + Vite
+# 📝 Tasks Manager Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Single Page Application (SPA) para gerenciamento de tarefas, consumindo a Tasks API hospedada no Google Cloud Run.
 
-Currently, two official plugins are available:
+Permite criar, listar, atualizar e deletar tarefas com um design moderno baseado em Material-UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 💻 Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Material-UI (MUI)
+- Axios para requisições HTTP
+- Vite como bundler
+- ESLint / Prettier (opcional)
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
+tasks-manager-frontend/
+├── public/                  
+├── src/
+│   ├── api/
+│   │   └── tasks.js         # Requisições à API via Axios
+│   ├── components/
+│   │   ├── TaskForm.jsx     
+│   │   └── TaskList.jsx     
+│   ├── App.jsx              
+│   ├── main.jsx             
+│   └── index.css            
+├── package.json             
+├── vite.config.js           
+└── README.md                
+```
+
+## ⚙️ Instalação
+
+Clone o projeto e instale dependências:
+```bash
+git clone <URL_DO_REPO>
+cd tasks-manager-frontend
+npm install
+```
+
+## 🚀 Execução
+
+Desenvolvimento
+```bash
+npm run dev
+```
+- A aplicação será servida em: http://localhost:5173
+- Hot reload automático.
